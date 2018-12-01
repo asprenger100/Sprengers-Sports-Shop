@@ -120,7 +120,7 @@ a:hover {
   display: flex;
   position: relative;
   animation-name: bottom-to-top;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -150,6 +150,10 @@ a:hover {
   margin: 40px auto 0 auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  animation-name: delayed-appearance;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 .special-offer {
