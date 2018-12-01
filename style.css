@@ -1,6 +1,5 @@
 * {
-  padding: 0;
-  margin: 0;
+  margin:0;
 }
 
 body {
@@ -8,20 +7,21 @@ body {
   font-family: Arial, sans-serif;
   color: white;
   text-align: center;
-  line-height: 1.6;
 }
 
 .landing-title {
-  background-color: grey
+  background-color: grey;
+  margin: 0;
 }
 
 .landing {
-  display: inline block;
+  display: inline-block;
   color: white;
   text-decoration: none;
   background-color: grey;
   padding: 1rem 2rem;
   margin-top: 40px;
+  text-align: center;
   position: relative;
   opacity: 0;
   animation-name: delayed-appearance;
@@ -50,6 +50,7 @@ a:hover {
 
 #landing-showcase {
   font-size: 30px;
+  text-align: center;
   position: relative;
   animation-name: floatingdown;
   animation-duration: 3s;
@@ -61,7 +62,7 @@ a:hover {
   25% {opacity:0.25;}
   50% {opacity:0.5;}
   75% {opacity:0.75;}
-  100% {opacity:1; top:0px;}
+  100% {opacity:1; top:0;}
 }
 
 #content {
@@ -73,11 +74,11 @@ a:hover {
 
 @keyframes bottom-to-top {
   0% {bottom:-800px;}
-  100% {bottom: 0px;}
+  100% {bottom: 0;}
 }
 
 .menu-container {
-  margin: 40px auto 0px auto;
+  margin: 40px auto 0 auto;
   display: flex;
   justify-content: center;
   opacity: 0;
@@ -95,7 +96,7 @@ a:hover {
   padding: 10px;
   text-decoration: none;
   box-sizing: border-box;
-  margin: 0px 50px 0px 50px;
+  margin: 0 50px 0 50px;
 }
 
 #pages-title {
@@ -108,22 +109,62 @@ a:hover {
 
 @keyframes left-to-right {
   0% {opacity:0; left:-350px;}
-  100% {opacity:1; left:0px;
+  100% {opacity:1; left:0;}
 }
 
-.home-columns {
+.column-layout {
+  max-width: 800px;
+  margin: 10px auto 0 auto;
+  padding: 20px 50px;
+  line-height: 1.65;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 700px;
+  position: relative;
+  animation-name: bottom-to-top;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
 
-.home-main-column {
+.main-column {
   flex: 2;
   order: 2;
+  padding-left: 40px;
+  line-height: 2;
+  text-align: left;
+  padding-top: 10px;
 }
 
-.home-sidebar {
+.sidebar-content {
   flex: 1;
   order: 1;
+  background-color: grey;
+  padding-right: 20px;
+}
+
+#sidebar-picture {
+  padding-left: 15px;
+}
+
+.special-offers {
+  max-width: 800px;
+  background-color: grey;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.special-offer {
+  flex: 1;
+  order: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 40%;
+}
+
+.learn-more {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin-top: 5px;
 }
