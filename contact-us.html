@@ -31,6 +31,23 @@
         12PM-5PM</p>
       </div>
     </div>
+    <div id="map"></div>
+    <script>
+     function initMap() {
+      var uluru = {lat: 44.1101468, lng: -87.7013277};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4, 
+        center: uluru
+        });
+      var marker = new google.maps.Marker({
+        position: uluru, 
+        map: map
+        });
+}
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0e0W1ICK1sCU8cR--3xgrEIOrQEsDrvU&callback=initMap">
+    </script>
     <div class="special-offers">
       <div class="special-offer">
         <h3>25% Off on Anything for Visiting Website!</h3>
@@ -43,7 +60,8 @@
         <a href="#" class="learn-more">Learn More</a>
       </div>
     </div>
-    
+     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer></script>
   </body>
   
 </html>
