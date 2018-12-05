@@ -181,5 +181,8 @@ a:hover {
 #map {
   height: 400px;
   width: 100%;
-  margin: 20px;
+}
+
+#form {
+  padding-top: 20px;
 }
