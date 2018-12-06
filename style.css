@@ -79,6 +79,8 @@ a:hover {
 
 .menu-container {
   margin: 40px auto 0 auto;
+  max-width: 930px;
+  width: 100%;
   display: flex;
   justify-content: center;
   opacity: 0;
@@ -91,9 +93,10 @@ a:hover {
 }
 
 .menu {
+  flex: 1;
   color: white;
   background-color: grey;
-  width: 250px;
+  flex-basis: 30%;
   padding: 10px;
   text-decoration: none;
   box-sizing: border-box;
@@ -148,10 +151,11 @@ a:hover {
 }
 
 .special-offers {
-  max-width: 800px;
   background-color: grey;
+  max-width: 800px;
   margin: 40px auto 0 auto;
   display: flex;
+  justify-content: space-between;
   opacity: 0;
   position: relative;
   animation-name: delayed-appearance;
@@ -166,7 +170,7 @@ a:hover {
   flex: 1;
   padding: 10px;
   box-sizing: border-box;
-  width: 40%;
+  flex-basis: 49%;
 }
 
 .learn-more {
