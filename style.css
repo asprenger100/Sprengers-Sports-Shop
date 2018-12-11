@@ -190,3 +190,11 @@ a:hover {
 #form {
   padding-top: 20px;
 }
+
+button {
+  background-color: grey;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: white;
+  margin: 20px auto;
+}
