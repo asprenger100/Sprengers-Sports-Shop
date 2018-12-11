@@ -30,7 +30,8 @@
         </ul>
       </div>
     </div>
-    <div class="special-offers">
+    <div><button id="hidebutton" onclick="hideOffers()">Hide Offers</button></div>
+    <div class="special-offers" id="specialoffers">
       <div class="special-offer">
         <h3>25% Off on Anything for Visiting Website!</h3>
         <p>To thank you for visiting our brand new website, we would like to offer you this 25% discount on anything in the store.</p>
@@ -42,6 +43,17 @@
         <a href="#" class="learn-more">Learn More</a>
       </div>
     </div>
+    
+    <script>
+      function hideOffers() {
+        var x = document.getElementById("specialoffers");
+        var y = document.getElementById("hidebutton");
+
+        x.style.display="none";
+        y.style.display="none";
+
+      }
+    </script>
   
   </body>
 </html>
